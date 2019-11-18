@@ -1,6 +1,6 @@
 import { Component, OnInit, NgZone } from '@angular/core';
-import { AuthService } from "../../shared/services/auth.service";
-import { Router } from "@angular/router";
+import { AuthService } from '../../shared/services/auth.service';
+import { Router } from '@angular/router';
 declare var jquery: any;
 declare var $: any;
 
@@ -17,24 +17,24 @@ export class DashboardComponent implements OnInit {
     public ngZone: NgZone
   ) { }
 
-  ngOnInit() { $("#form").toggle();  $("#results").toggle();}
+  ngOnInit() { $('#form').toggle();  $('#results').toggle(); }
 
   toggleClassUser() {
-    $("#userinfo").toggle();
-    $("#form").toggle();
-    $("#results").toggle();
+    $('#userinfo').toggle();
+    $('#form').toggle();
+    $('#results').toggle();
   }
 
   toggleClassPost() {
-    $("#form").toggle();
-    $("#userinfo").toggle();
-    $("#results").toggle();
+    $('#form').toggle();
+    $('#userinfo').toggle();
+    $('#results').toggle();
   }
-  
-  addPost(){
+
+  addPost() {
     // alert("Yes");
     // alert($('#postinput').val());
-    $('#results').append('<div style="width: 50vw; margin-left:auto; margin-right:auto; border: 2px solid red; border-radius: 5px; margin-top: 10px;">'+ $('#postinput').val());
+    $('#results').append('<div style="width: 50vw; margin-left:auto; margin-right:auto; border: 2px solid red; border-radius: 5px; margin-top: 10px;">' + $('#postinput').val());
 
 
     // $('#results').append(
