@@ -1,7 +1,7 @@
 <!-- Top navigation -->
-<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+<nav id="nav" class="navbar  fixed-top flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" routerLink="/register-student">
-    <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
+    <img style="max-height: 40px;" class="brand-logo" src="./../../../assets/redditlogo.png" alt="positronX.io Logo">
     <span class="dasboard-text">Dashboard</span>
   </a>
 </nav>
@@ -13,11 +13,18 @@
     <nav class="col-md-2 d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
         <ul class="nav flex-column">
+          
           <li class="nav-item">
-            <a class="nav-link active">
+            <a class="nav-link" (click)="toggleClassUser()">
               <i class="fas fa-user"></i>User Profile
             </a>
           </li>
+
+          <li class="nav-item">
+              <a class="nav-link" (click)="toggleClassPost()">
+                <i class="fas fa-user"></i>Post
+              </a>
+            </li>
           <!-- Calling SignOut() Api from AuthService -->
           <li class="nav-item">
             <a class="nav-link" (click)="authService.SignOut()">
@@ -29,7 +36,7 @@
     </nav>
 
     <!-- Main content -->
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <main id="userinfo" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <div class="inner-adjust">
 
         <div class="pt-3 pb-2 mb-3 border-bottom">
@@ -53,6 +60,23 @@
 
       </div>
     </main>
-
   </div>
+
+
+  <div class="row">
+      <body>
+          <form id="form" [formGroup]="myForm" >
+              <div class="inner-addon left-addon">
+                  <img class="searchimg" src="../../../assets/arrow.png">
+                  <input id="postinput" style="padding-left:50px;"type="text" class="form-control"  />
+                  <input type="button" class="btn btnPrimary" value="Add post" (click)="addPost()">
+              </div>
+          </form>
+          
+      </body>
+  </div>
+
+  <div style="text-align: center; font-size: 50px; height: 100px; margin:auto;"id="results">
+
+    </div>
 </div>

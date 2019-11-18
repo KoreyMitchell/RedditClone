@@ -1,0 +1,44 @@
+#nav {
+    background: url('https://papers.co/wallpaper/papers.co-vd76-noir-by-boris-p-borisov-dark-pattern-art-36-3840x2400-4k-wallpaper.jpg');
+}
+
+/* .active {
+    background:#4FA9DC; color:#000;
+ } */
+
+
+
+  .nav-item > a:hover {
+    color: aqua;
+  }
+  #form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .searchimg {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .searchimg  { left:  0px;}
+.right-addon .searchimg { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+#postContents{
+  border-style: solid;
+  border-color: red;
+}
