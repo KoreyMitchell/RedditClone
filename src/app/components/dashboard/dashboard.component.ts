@@ -17,16 +17,18 @@ export class DashboardComponent implements OnInit {
     public ngZone: NgZone
   ) { }
 
-  ngOnInit() { $("#form").toggle(); }
+  ngOnInit() { $("#form").toggle();  $("#results").toggle();}
 
   toggleClassUser() {
     $("#userinfo").toggle();
     $("#form").toggle();
+    $("#results").toggle();
   }
 
   toggleClassPost() {
     $("#form").toggle();
     $("#userinfo").toggle();
+    $("#results").toggle();
   }
   
   addPost(){
