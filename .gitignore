@@ -10,6 +10,7 @@
 /dist
 /tmp
 /out-tsc
+/functions/lib
 
 # dependencies
 /node_modules
