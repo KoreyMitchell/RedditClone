@@ -8,7 +8,7 @@ import {
   AngularFirestoreDocument,
   fromDocRef
 } from '@angular/fire/firestore';
-import { Topic } from '../topic/topic.model';
+import { Topic } from '../topics-add/topics-add.model';
 
 @Component({
   selector: 'app-topics-view',

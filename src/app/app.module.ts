@@ -23,7 +23,6 @@ import { environment } from '../environments/environment';
 
 // Services components
 import { AuthService } from './shared/services/auth.service';
-import { PostComponent } from './components/post/post.component';
 import { TopicComponent } from './components/topic/topic.component';
 import { TopicsViewComponent } from './components/topics-view/topics-view.component';
 import { PostsViewComponent } from './components/posts-view/posts-view.component';
@@ -39,12 +38,11 @@ import { TopicsAddComponent } from './components/topics-add/topics-add.component
     DashboardComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    PostComponent,
     TopicComponent,
+    TopicsAddComponent,
     TopicsViewComponent,
     PostsViewComponent,
     PostsAddComponent,
-    TopicsAddComponent,
   ],
   imports: [
     BrowserModule,
