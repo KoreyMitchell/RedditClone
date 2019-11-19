@@ -26,6 +26,9 @@ import { AuthService } from './shared/services/auth.service';
 import { PostComponent } from './components/post/post.component';
 import { TopicComponent } from './components/topic/topic.component';
 import { TopicsViewComponent } from './components/topics-view/topics-view.component';
+import { PostsViewComponent } from './components/posts-view/posts-view.component';
+import { PostsAddComponent } from './components/posts-add/posts-add.component';
+import { TopicsAddComponent } from './components/topics-add/topics-add.component';
 
 
 @NgModule({
@@ -39,6 +42,9 @@ import { TopicsViewComponent } from './components/topics-view/topics-view.compon
     PostComponent,
     TopicComponent,
     TopicsViewComponent,
+    PostsViewComponent,
+    PostsAddComponent,
+    TopicsAddComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,9 +54,7 @@ import { TopicsViewComponent } from './components/topics-view/topics-view.compon
     AngularFirestoreModule,
     ReactiveFormsModule
   ],
-  providers: [
-    AuthService
-  ],
+  providers: [ AuthService ],
   bootstrap: [AppComponent]
 })
 
