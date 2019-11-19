@@ -11,9 +11,9 @@ import {
 import { Topic } from '../topic/topic.model';
 
 @Component({
-  selector: 'app-topic-view',
-  templateUrl: './topic-view.component.html',
-  styleUrls: ['./topic-view.component.css']
+  selector: 'app-topics-view',
+  templateUrl: './topics-view.component.html',
+  styleUrls: ['./topics-view.component.css']
 })
 
 export class TopicsViewComponent implements OnInit {

@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent, canActivate: [SecureInnerPagesGuard] },
   { path: 'verify-email-address', component: VerifyEmailComponent, canActivate: [SecureInnerPagesGuard] },
-  { path: 'topic', component: TopicComponent, canActivate: [SecureInnerPagesGuard] }
+  { path: 'topic', component: TopicComponent, canActivate: [SecureInnerPagesGuard] },
   { path: 'topics-view', component: TopicsViewComponent, canActivate: [SecureInnerPagesGuard] }
 ];
 

@@ -7,14 +7,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 // App routing modules
 import { AppRoutingModule } from './shared/routing/app-routing.module';
 
-// App components
+// Auth components
 import { AppComponent } from './app.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-import { ViewTopicsComponent } from './components/view-topics/view-topics.component';
 
 // Angular & Firebase + Environment
 import { AngularFireModule } from '@angular/fire';
@@ -22,12 +21,11 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
-// Services
+// Services components
 import { AuthService } from './shared/services/auth.service';
-import { FirebaseService } from './shared/services/firebase.service';
-import { PostComponent } from './post/post.component';
-import { TopicComponent } from './topic/topic.component';
-import { TopicViewComponent } from './topic-view/topic-view.component';
+import { PostComponent } from './components/post/post.component';
+import { TopicComponent } from './components/topic/topic.component';
+import { TopicsViewComponent } from './components/topics-view/topics-view.component';
 
 
 @NgModule({
@@ -38,10 +36,9 @@ import { TopicViewComponent } from './topic-view/topic-view.component';
     DashboardComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    ViewTopicsComponent,
     PostComponent,
     TopicComponent,
-    TopicViewComponent,
+    TopicsViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,8 +49,7 @@ import { TopicViewComponent } from './topic-view/topic-view.component';
     ReactiveFormsModule
   ],
   providers: [
-    AuthService,
-    FirebaseService
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
