@@ -4,7 +4,7 @@
 /.firebase
 
 # config file
-/src/environments/environment.ts
+/src/environments/*
 
 # compiled output
 /dist
